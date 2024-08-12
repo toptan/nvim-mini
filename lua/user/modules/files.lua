@@ -2,18 +2,18 @@
 
 local M = {}
 
-local function toggle_files()
-  local files_status = 0 -- 1 is show; 0 is hide
-  return function()
-    if files_status == 1 then
-      files_status = 0
-      MiniFiles.close()
-    else
-      files_status = 1
-      MiniFiles.open()
-    end
-  end
-end
+-- local function toggle_files()
+--   local files_status = 0 -- 1 is show; 0 is hide
+--   return function()
+--     if files_status == 1 then
+--       files_status = 0
+--       MiniFiles.close()
+--     else
+--       files_status = 1
+--       MiniFiles.open()
+--     end
+--   end
+-- end
 
 function M.setup()
   local options = {
@@ -31,7 +31,7 @@ function M.setup()
     {
       mode = "n",
       keys = "<leader>e",
-      action = toggle_files(),
+      action = "<cmd>lua MiniFiles.open()<cr>",
       opts = { noremap = true, silent = true, desc = "File explorer" },
     },
   }

@@ -16,6 +16,7 @@ function M.setup()
 
     clues = {
       { mode = "n", keys = "<leader>b", desc = "+Buffers" },
+      { mode = "n" ,keys = "<leader>f", desc = "+Files" },
       { mode = "n", keys = "<leader>l", desc = "+Lsp" },
     },
   }

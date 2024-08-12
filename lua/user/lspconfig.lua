@@ -40,8 +40,7 @@ local function lsp_keymaps(bufnr)
     },
     {
       mode = "n",
-      keys =
-      "gl",
+      keys = "gl",
       action = "<cmd>lua vim.diagnostic.open_float()<cr>",
       opts = { noremap = true, silent = true, desc = "Float diagnostics" },
     },
@@ -133,11 +132,6 @@ function M.config()
   -- 	-- { "<leader>lr", "<cmd>Lspsaga rename<cr>", desc = "Rename" },
   -- }
   --
-  -- wk.add(mappings)
-  --
-  -- wk.add({
-  -- 	{ "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code action", mode = "v" },
-  -- })
 
   local lspconfig = require("lspconfig")
   local icons = require("user.icons")
