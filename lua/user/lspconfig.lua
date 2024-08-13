@@ -112,27 +112,6 @@ function M.config()
 
   utils.setup_keys(mappings)
 
-  -- local wk = require("which-key")
-  -- local mappings = {
-  -- 	{ "<leader>l", group = "LSP" },
-  -- 	{ "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", desc = "Code action" },
-  -- 	{
-  -- 		"<leader>lf",
-  -- 		"<cmd>lua vim.lsp.buf.format({async = true, filter = function(client) return client.name ~= 'typescript-tools' end})<cr>",
-  -- 		desc = "Format",
-  -- 	},
-  -- 	{ "<leader>li", "<cmd>LspInfo<cr>", desc = "Info" },
-  -- 	{ "<leader>lb", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", desc = "Buffer diagnostics (Trouble)" },
-  -- 	{ "<leader>ld", "<cmd>Trouble diagnostics toggle<cr>", desc = "Workspace diagnostics (Trouble)" },
-  --
-  -- 	-- { "<leader>ll", "<cmd>Lspsaga show_line_diagnostics<cr>", desc = "CodeLens action" },
-  -- 	-- { "<leader>lj", "<cmd>Lspsaga diagnostic_jump_next<cr>", desc = "Next diagnostic" },
-  -- 	-- { "<leader>lk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", desc = "Prev diagnostic" },
-  -- 	-- { "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<cr>", desc = "Quickfix" },
-  -- 	-- { "<leader>lr", "<cmd>Lspsaga rename<cr>", desc = "Rename" },
-  -- }
-  --
-
   local lspconfig = require("lspconfig")
   local icons = require("user.icons")
 

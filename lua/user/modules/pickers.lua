@@ -4,31 +4,38 @@ local M = {}
 
 function M.setup()
 	require("mini.pick").setup()
-	local utils = require("user.utils")
+	require("mini.extra").setup()
+  local utils = require("user.utils")
 	local mappings = {
 		{
 			mode = "n",
 			keys = "<leader>bb",
-			action = "<cmd>lua MiniPick.builtin.buffers()<cr>",
+			action = "<cmd>Pick buffers<cr>",
 			opts = { noremap = true, silent = true, desc = "Pick buffer" },
 		},
 		{
 			mode = "n",
 			keys = "<leader>ff",
-			action = "<cmd>lua MiniPick.builtin.files()<cr>",
+			action = "<cmd>Pick files<cr>",
 			opts = { noremap = true, silent = true, desc = "Find files" },
 		},
 		{
 			mode = "n",
 			keys = "<leader>ft",
-			action = "<cmd>lua MiniPick.builtin.grep_live()<cr>",
+			action = "<cmd>Pick grep_live<cr>",
 			opts = { noremap = true, silent = true, desc = "Grep files" },
 		},
 		{
 			mode = "n",
-			keys = "<leader>fh",
-			action = "<cmd>lua MiniPick.builtin.help()<cr>",
+			keys = "<leader>sh",
+			action = "<cmd>Pick help<cr>",
 			opts = { noremap = true, silent = true, desc = "Search help" },
+		},
+		{
+			mode = "n",
+			keys = "<leader>ld",
+			action = "<cmd>Pick diagnostic<cr>",
+			opts = { noremap = true, silent = true, desc = "Diagnostics" },
 		},
 	}
 	utils.setup_keys(mappings)

@@ -17,7 +17,8 @@ function M.setup()
     clues = {
       { mode = "n", keys = "<leader>b", desc = "+Buffers" },
       { mode = "n" ,keys = "<leader>f", desc = "+Files" },
-      { mode = "n", keys = "<leader>l", desc = "+Lsp" },
+      { mode = "n", keys = "<leader>l", desc = "+LSP" },
+      { mode = "n", keys = "<leader>s", desc = "+Search" },
     },
   }
   require("mini.clue").setup(options)

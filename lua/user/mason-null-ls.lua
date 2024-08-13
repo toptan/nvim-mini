@@ -18,7 +18,7 @@ function M.config()
       "stylua",
       "xmlformatter",
       "yamllint",
-      "sqlfmt",
+      "sql-formatter",
     },
   }
 

@@ -1,4 +1,4 @@
-require("user.launch")
+require("user.launch") -- This has to be first
 require("user.options")
 require("user.keymaps")
 
@@ -12,8 +12,8 @@ spec("user.none-ls")
 
 require("user.lazy")
 
--- vim.cmd("colorscheme kanagawa-lotus")
-vim.cmd("colorscheme minischeme")
+vim.cmd("colorscheme kanagawa")
+-- vim.cmd("colorscheme minischeme")
 
 require("user.modules.starter").setup()
 require("user.modules.clue").setup()
@@ -23,3 +23,4 @@ require("user.modules.icons").setup()
 require("user.modules.statusline").setup()
 require("user.modules.bufremove").setup()
 require("user.modules.pickers").setup()
+require("user.modules.notify").setup()
