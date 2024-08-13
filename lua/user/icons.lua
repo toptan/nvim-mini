@@ -13,6 +13,13 @@ local M = {
     Debug = "",
     Trace = "✎",
   },
+  ui = {
+    ChevronRight = "",
+    ChevronShortDown = "",
+    ChevronShortLeft = "",
+    ChevronShortRight = "",
+    ChevronShortUp = "",
+  },
 }
 
 return M
