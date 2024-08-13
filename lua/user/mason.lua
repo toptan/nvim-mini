@@ -7,10 +7,13 @@ local M = {
 
 function M.config()
 	local servers = {
-		"lua_ls",
 		"bashls",
 		"jsonls",
+		"lua_ls",
 		"yamlls",
+    "pylsp",
+    "pyright",
+    "ruff",
 		-- "clangd",
 		-- "cmake",
 		-- "bashls",

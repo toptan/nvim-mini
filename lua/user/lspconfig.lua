@@ -119,7 +119,9 @@ function M.config()
     "lua_ls",
     "jsonls",
     "yamlls",
-    -- "pylsp",
+    "pyright",
+    "ruff",
+    "pylsp",
     -- "clangd",
     -- "cmake",
   }
