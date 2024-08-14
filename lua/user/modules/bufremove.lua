@@ -9,7 +9,7 @@ function M.setup()
     {
       mode = "n",
       keys = "<leader>bd",
-      action = "<cmd>bdelete<cr>",
+      action = "<cmd>lua MiniBufremove.delete()<cr>",
       opts = { noremap = true, silent = true, desc = "Delete buffer" },
     },
     {
