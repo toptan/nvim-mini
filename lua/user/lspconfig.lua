@@ -122,6 +122,7 @@ function M.config()
     "pyright",
     "ruff",
     "pylsp",
+    "lemminx",
     -- "clangd",
     -- "cmake",
   }
